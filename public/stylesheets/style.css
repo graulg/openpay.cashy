@@ -1,0 +1,25 @@
+#header, #footer {
+  background: #ededed;
+  color: #041994;
+  padding: 15px;
+}
+
+#menu {
+  padding: 15px;
+}
+
+#botones-menu {
+  text-align: center;
+}
+
+a.btn {
+  color: #fff;
+}
+
+#tbl-clientes {
+  width: 100%;
+}
+
+div.card {
+  margin: 15px;
+}

@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Mega Facts
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    block stylesheets
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+  body
+      div#header
+        h1 Cashy-Openpay
+      #menu
+        h2 Openpay
+        div#botones-menu
+          p
+            a.btn.btn-lg.btn-primary(href="/registro-cliente") Registrar cliente
+          p
+            a.btn.btn-lg.btn-primary(href="/lista-clientes") Lista de clientes
+        //- h2 Elige tu héroe
+        //- ul#heroes
+        //-   each hero in heroes
+        //-     li(class='hero-name')
+        //-       a(href='#') #{hero}
+      block content
+      
+      div#footer
+        
+      #scripts
+        script(src="/javascripts/jquery.min.js")
+        script(src="/javascripts/bootstrap.bundle.min.js")
+        block scripts
