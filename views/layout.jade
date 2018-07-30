@@ -7,25 +7,26 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     
   body
-      div#header
-        h1 Cashy-Openpay
-      #menu
-        h2 Openpay
-        div#botones-menu
-          p
-            a.btn.btn-lg.btn-primary(href="/registro-cliente") Registrar cliente
-          p
-            a.btn.btn-lg.btn-primary(href="/lista-clientes") Lista de clientes
-        //- h2 Elige tu héroe
-        //- ul#heroes
-        //-   each hero in heroes
-        //-     li(class='hero-name')
-        //-       a(href='#') #{hero}
-      block content
+    nav.navbar.navbar-dark.bg-dark.sticky-top
+      a.navbar-brand(href="/") Openpay - Cashy
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Cambiar navegación")
+        span.navbar-toggler-icon
+      div#navbarMenu.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href="/registro-cliente") Registro de cliente
+            
+          li.nav-item
+            a.nav-link(href="/lista-clientes") Lista de clientes
+    
+    div.container
+      div.row
+        div.col-md-8.offset-md-2.col-sm-12
+          block content
+    
+    div#footer
       
-      div#footer
-        
-      #scripts
-        script(src="/javascripts/jquery.min.js")
-        script(src="/javascripts/bootstrap.bundle.min.js")
-        block scripts
+    #scripts
+      script(src="/javascripts/jquery.min.js")
+      script(src="/javascripts/bootstrap.bundle.min.js")
+      block scripts
