@@ -47,7 +47,8 @@ $(function() {
     //Se valida que se haya seleccionado un país de la lista
     var country_code = $("#country_code").data("country_code");
     if (!country_code){
-      console.log("validación no superada");
+      mostrarMensaje("Seleccionar un país de la lista", "danger");
+      $("#country_code").val("").trigger("change");
       return false;
     }
 
